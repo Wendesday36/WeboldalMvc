@@ -34,11 +34,14 @@ class TextUrlapElem {
     });
   }
   get valid(){
-    
+
     return this.#valid
   }
   get ertek(){
     return this.#ertek;
+  }
+  get key(){
+    return this.#key
   }
   #textElem() {
     let txt = "";

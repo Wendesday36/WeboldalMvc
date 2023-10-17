@@ -11,6 +11,9 @@ class UrlapController {
             console.log(this.Model.leiro.nev.type)
             console.log(this.Model.leiro.szul.placeholder)
             console.log(this.Model.leiro.szul.regex.min) */
+            $(window).on("katt", (event) => {
+              console.log(event.detail);
+            });
   }
 }
 export default UrlapController;
