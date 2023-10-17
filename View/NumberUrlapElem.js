@@ -18,10 +18,9 @@ class NumberUrlapElem {
     console.log(this.InValidElem);
     this.InputElem.on("keyup", () => {
       let ertek = this.InputElem.val();
-      let reg = this.#elemLeiro.regex;
-      let regReg = new RegExp(reg);
-      console.log(regReg.test(ertek));
-      if (regReg.test(ertek)) {
+      let regmin = this.#elemLeiro.regex.min;
+      let regmax = this.#elemLeiro.regex.max;
+      if (regmin<= ertek <=regmax) {
         this.ValidElem.removeClass("lathato");
         this.InValidElem.addClass("lathato");
       } else {
