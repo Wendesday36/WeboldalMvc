@@ -17,5 +17,11 @@ export const urlapleiro={
             max:2023
         },
         valid:"1000 és 2023 közötti számot várunk"
+    },
+    checkbox1:{
+        megj:"szeretem a csokit",
+        type:"checkbox",
+        value:"igen",
+        valid:"Jelöld be ha szereted a csokit"
     }
 }
