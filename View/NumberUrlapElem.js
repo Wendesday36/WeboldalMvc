@@ -1,6 +1,8 @@
 class NumberUrlapElem {
   #key;
   #elemLeiro;
+  #valid = false;
+  #ertek={};
   constructor(key, elemLeiro, szulElem) {
     this.#key = key;
     this.#elemLeiro = elemLeiro;
@@ -21,13 +23,25 @@ class NumberUrlapElem {
       let regmin = this.#elemLeiro.regex.min;
       let regmax = this.#elemLeiro.regex.max;
       if (regmin<= ertek <=regmax) {
+        this,this.#valid = true;
         this.ValidElem.removeClass("lathato");
         this.InValidElem.addClass("lathato");
       } else {
+        this.#valid=false
         this.ValidElem.addClass("lathato");
         this.InValidElem.removeClass("lathato");
       }
     });
+  }
+  get valid(){
+
+    return this.#valid
+  }
+  get ertek(){
+    return this.#ertek;
+  }
+  get key(){
+    return this.#key
   }
   #numberElem() {
     let txt = "";
