@@ -23,7 +23,7 @@ class NumberUrlapElem {
       let regmin = this.#elemLeiro.regex.min;
       let regmax = this.#elemLeiro.regex.max;
       if (regmin<= ertek <=regmax) {
-        this,this.#valid = true;
+        this.#valid = true;
         this.ValidElem.removeClass("lathato");
         this.InValidElem.addClass("lathato");
       } else {

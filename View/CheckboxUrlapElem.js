@@ -18,7 +18,7 @@ class CheckboxUrlapElem {
         .children(".invalid");
       console.log(this.ValidElem);
       console.log(this.InValidElem);
-      /* this.InputElem.on("keyup", () => {
+      /* this.InputElem.on("click", () => {
         this.#ertek = this.InputElem.val();
         let reg = this.#elemLeiro.regex;
         let regReg = new RegExp(reg);

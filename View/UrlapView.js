@@ -1,3 +1,4 @@
+import CheckboxUrlapElem from "./CheckboxUrlapElem.js";
 import NumberUrlapElem from "./NumberUrlapElem.js";
 import TextUrlapElem from "./TextUrlapElem.js";
 
@@ -51,8 +52,13 @@ class UrlapView {
           );
           break;
         case "number":
-          new NumberUrlapElem(key, this.#leiro[key], this.formElem);
+          this.#urlapElemList.push(
+            new NumberUrlapElem(key, this.#leiro[key], this.formElem));
           break;
+        case "checkbox":
+          this.#urlapElemList.push(
+              new CheckboxUrlapElem(key, this.#leiro[key], this.formElem));
+            break;
         default:
         // code block
       }
